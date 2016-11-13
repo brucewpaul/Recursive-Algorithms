@@ -109,6 +109,14 @@ var invest = function(amount, interest, years ){
 //    printRangeUpDown(4, 10);
 //    console.logs: 4,5,6,7,8,9,10,9,8,7,6,5,4
 var printRangeUpDown = function(min, max){
+  if (min >= max) {
+    console.log(max);
+    return
+  }
+  console.log(min)
+  printRangeUpDown(min + 1, max)
+  console.log(min)
+
 
 };
 
