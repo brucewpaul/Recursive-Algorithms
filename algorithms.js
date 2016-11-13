@@ -51,14 +51,10 @@ var countVowels = function(str, count){
 
 var recursiveSum = function(n){
   // console.log(n)
-  if ( n === '' ) {
-    return 0;
-  }
 
-  return Number( n.toString().charAt(0) ) + Number( recursiveSum( n.toString().slice(1) ) )
+  return n === '' ? 0 : Number( n.toString().charAt(0) ) + Number( recursiveSum( n.toString().slice(1) ) )
 
 };
-
 ///////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////
