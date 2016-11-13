@@ -38,7 +38,6 @@ var countVowels = function(str, count){
   return countVowels(str.slice(1), count);
 
 };
-console.log( countVowels('abcedfg') )// ->2
 
 ///////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////
@@ -51,6 +50,12 @@ console.log( countVowels('abcedfg') )// ->2
 // sumDigits(12) → 3
 
 var recursiveSum = function(n){
+  // console.log(n)
+  if ( n === '' ) {
+    return 0;
+  }
+
+  return Number( n.toString().charAt(0) ) + Number( recursiveSum( n.toString().slice(1) ) )
 
 };
 
