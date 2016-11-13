@@ -66,6 +66,14 @@ var recursiveSum = function(n){
 
 var isPowerOfTwo = function(n){
 
+  if ( n % 2 === 1 ) {
+    return false;
+  }
+  if ( n === 2 ) {
+    return true;
+  }
+  return isPowerOfTwo( n / 2 )
+
 };
 
 ///////////////////////////////////////////////////////////////////////
